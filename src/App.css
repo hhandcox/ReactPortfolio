@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  background-color: rgb(33, 33, 33);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: Quicksand;
+  background-size: cover;
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 .App-logo {
@@ -7,32 +15,122 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.introText {
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+  height: 85vh;
+  max-width: 70vh;
+}
+
+.aboutMe {
+}
+
+.navItems {
+  margin-right: auto;
+}
+
+
+.push {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.centerNav {
+  max-width: 85% !important;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.nameName {
+  animation-name: nameAnimation;
+  animation-duration: 35s;
+}
+
+@keyframes nameAnimation {
+  0% {
+    color: #ff00e6;
+    left: 0px;
+    top: 0px;
   }
-  to {
-    transform: rotate(360deg);
+  25% {
+    color: #ffe601;
+    left: 200px;
+    top: 0px;
   }
+  50% {
+    color: #04f6a5;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    color: #07a2f6;
+    left: 0px;
+    top: 200px;
+  }
+  90% {
+    color: #6c00f1;
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    color: #ffffff;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+#socialBtn {
+  border-radius: 50%;
+  min-width: 35px;
+  max-width: 45px;
+  outline: none;
+  border: none;
+}
+
+.btnFacebook {
+  background-color: #07a2f6;
+}
+
+.btnTwitter {
+  background-color: #eeff00;
+}
+
+.projectContent {
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+  height: 85vh;
+  max-width: 70vh;
+}
+
+.aboutText {
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+  height: 78.1vh;
+  max-width: 70vh;
 }
