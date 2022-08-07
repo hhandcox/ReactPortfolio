@@ -6,8 +6,8 @@ import SubHeader from "../components/SubHeader";
 const HomePage = () => {
     return (
         <>
+            <Header />
             <Introduction />
-            <Footer />
         </>
     )
 }

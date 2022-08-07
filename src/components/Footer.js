@@ -1,9 +1,13 @@
 import React from "react";
 import { Button } from 'reactstrap';
+import ReactSwitch from 'react-switch';
+import { useState } from "react";
+
 
 const Footer = () => {
+
     return (
-        <div className="container pb-0">
+        <div className="container pb-0 footerStyle">
         <section className="mb-4">
           <a
             id="socialBtn"
@@ -64,7 +68,9 @@ const Footer = () => {
             data-toggle="tooltip" data-placement="top" title="See my Github"
             ><i className="fab fa-github"></i
           ></a>
+         
         </section>
+
       </div>
     )};
 

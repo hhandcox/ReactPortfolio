@@ -1,11 +1,12 @@
 import React from "react";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const Projects = () => {
     return (
         <>
-            <div className="projectContent">Content From Projects</div>
-            <Footer />
+            <Header />
+            <div className="projectContent mx-auto">Content From Projects</div>
         </>
     );
 }

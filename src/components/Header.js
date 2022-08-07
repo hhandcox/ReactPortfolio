@@ -13,7 +13,7 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <Navbar className='centerNav' dark sticky='top' expand='md'>
+        <Navbar className='centerNav' sticky='top' expand='md'>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
             <Collapse isOpen={menuOpen} navbar>
                 <Nav className='navItems container-fluid mx-auto' navbar>
@@ -33,7 +33,7 @@ const Header = () => {
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/contact'>
+                        <NavLink className='nav-link' to='/contact' href='/contact'>
                             Contact
                         </NavLink>
                     </NavItem>

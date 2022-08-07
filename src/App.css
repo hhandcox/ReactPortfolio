@@ -1,13 +1,40 @@
 .App {
   text-align: center;
-  background-color: rgb(33, 33, 33);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
-  color: white;
   font-family: Quicksand;
   background-size: cover;
   position: absolute;
   min-height: 100%;
   min-width: 100%;
+}
+
+#light {
+  background-color: #ffffff;
+  color:rgb(0, 0, 0);
+  box-shadow: inset 0 0 5rem rgba(138, 138, 138, 0.5);
+}
+
+#dark {
+  background-color: rgb(33, 33, 33);
+  color: #ffffff;
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
+#light .nav-link {
+  color: rgb(0, 0, 0) ! important;
+}
+
+#light .nav-link:hover {
+  color: #ff00e6;
+  font-weight: 300;
+}
+
+
+
+#dark .nav-link {
+  color: white !important;
+}
+#dark .navbar-toggler {
+  background-color: rgb(101, 101, 101);
 }
 
 .App-logo {
@@ -21,7 +48,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(255, 255, 255);
 }
 
 .App-link {
@@ -30,12 +56,21 @@
 
 .introText {
   display: flex;
-  color: rgb(255, 255, 255);
   justify-content: center;
   align-items: center;
   vertical-align: center;
-  height: 85vh;
+  height: 80vh;
   max-width: 70vh;
+}
+
+.aboutText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+  max-width: 70vh;
+  height: 100%;
+  margin-bottom: 150px;
 }
 
 .aboutMe {
@@ -58,6 +93,7 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  color: white ;
 
 }
 
@@ -117,20 +153,109 @@
 
 .projectContent {
   display: flex;
-  color: rgb(255, 255, 255);
   justify-content: center;
   align-items: center;
   vertical-align: center;
-  height: 85vh;
+  height: 80vh;
   max-width: 70vh;
 }
 
-.aboutText {
+
+
+.switch {
   display: flex;
-  color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  margin-left: 10px;
+}
+
+.switchLabel {
+  margin-right: 5px;
+}
+
+.contactForm {
+  display: flex;
   justify-content: center;
   align-items: center;
   vertical-align: center;
-  height: 78.1vh;
+  height: 80vh;
   max-width: 70vh;
+}
+
+.profilePic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    max-width: 500px;
+
+}
+
+.aboutMeName {
+  border-bottom: #61dafb;
+}
+
+.aboutTechCard {
+  color: black;
+}
+
+#light .feature {
+  background-color: rgb(255, 0, 234);
+  color: black;  
+  display: flex;
+  max-width: 5em;
+  min-height: 5em;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20%;
+  font-size: 12px;
+  flex-direction: column;
+}
+#dark .feature {
+  color: white;
+  display: flex;
+  max-width: 5em;
+  min-height: 5em;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20%;
+  font-size: 12px;
+  flex-direction: column;
+}
+
+#light .round-icon {
+  font-size: 12px;
+}
+
+#dark .feature {
+  background-color: #07a2f6;
+}
+
+#light .infoCard {
+  background-color: rgb(47, 47, 47);
+  color: white;
+}
+
+#dark .infoCard {
+  background-color: white;
+  color: black;
+}
+
+#dark .hideTech {
+  display: block;
+}
+
+#light .hideTech {
+  display: block;
+}
+
+.stackButton {
+  margin-bottom: 20px;
 }
