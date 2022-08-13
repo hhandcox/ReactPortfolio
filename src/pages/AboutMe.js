@@ -21,8 +21,7 @@ const AboutMe = () => {
             <div className="aboutMeStyles">
                 <AboutInfo  />
             </div>
-            <Button outline className="stackButton" color="primary" onClick={techButton}>My Stack</Button>
-            <div className="aboutTechCard d-none" id='tech'>
+            <div className="aboutTechCard" id='tech'>
                 <AboutTech />
             </div>
         </div>

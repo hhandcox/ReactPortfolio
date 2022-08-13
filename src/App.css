@@ -20,7 +20,7 @@
 }
 
 #light .nav-link {
-  color: rgb(0, 0, 0) ! important;
+  color: rgb(0, 0, 0);
 }
 
 #light .nav-link:hover {
@@ -80,6 +80,22 @@
   margin-right: auto;
 }
 
+#dark .navItems li:hover {
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px #0fa,
+  0 0 82px #0fa,
+  0 0 92px #0fa,
+  0 0 102px #0fa,
+  0 0 151px #0fa;
+}
+
+#light .navItems li:hover {
+  color: #ff01fb;
+}
+
 
 .push {
   margin-left: auto;
@@ -88,7 +104,7 @@
 }
 
 .centerNav {
-  max-width: 85% !important;
+  max-width: 1100px !important;
   align-items: center;
   justify-content: center;
   margin-left: auto;
@@ -168,6 +184,7 @@
   justify-content: center;
   vertical-align: center;
   margin-left: 10px;
+  margin-top: 20px;
 }
 
 .switchLabel {
@@ -182,14 +199,30 @@
   height: 80vh;
   max-width: 70vh;
 }
+.profilePicContainer {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 500px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#light .profilePicContainer {
+  box-shadow: 10px 10px 15px lightblue;
+}
+
+#dark .profilePicContainer {
+  box-shadow: 5px 5px 15px rgb(249, 76, 235)
+}
 
 .profilePic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: 100px;
-    margin-bottom: 20px;
+    width: 100%;
     max-width: 500px;
 
 }
@@ -203,39 +236,40 @@
 }
 
 #light .feature {
-  background-color: rgb(255, 0, 234);
-  color: black;  
+  background-color: rgb(249, 76, 235);
   display: flex;
-  max-width: 5em;
-  min-height: 5em;
+  max-width: 4em;
+  min-height: 4em;
   align-items: center;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
   border-radius: 20%;
-  font-size: 12px;
   flex-direction: column;
 }
 #dark .feature {
   color: white;
   display: flex;
-  max-width: 5em;
-  min-height: 5em;
+  max-width: 4em;
+  min-height: 4em;
   align-items: center;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
   border-radius: 20%;
-  font-size: 12px;
   flex-direction: column;
+  background-color: #47bfff;
+
 }
 
-#light .round-icon {
-  font-size: 12px;
+.fontIcon {
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
 }
 
 #dark .feature {
-  background-color: #07a2f6;
 }
 
 #light .infoCard {
@@ -258,4 +292,199 @@
 
 .stackButton {
   margin-bottom: 20px;
+}
+
+.hRule {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(to left, #00b7ff, #ff00e6);
+  height: 3px;
+  clear: both;
+  border: 0;
+  padding: 0;
+}
+
+#dark .Card {
+  max-height: 25em;
+  color: black;
+  border-radius: 10px;
+  padding-top: -50px;
+}
+
+#light .Card {
+  max-height: 25em;
+  color: white;
+  background-color: rgb(124, 124, 124);
+  border-radius: 10px;
+}
+
+#maxWidth {
+  max-width: 1100px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .card img {
+    height: 11em;
+  }
+}
+
+.fa-globe {
+  padding-right: 5px;
+}
+
+.fa-brands {
+  padding-right: 5px;
+}
+
+.btn {
+  margin: 3px;
+}
+
+.contact {
+  padding: 4%;
+  height: 400px;
+  margin-bottom: 250px;
+}
+
+.col-md-3 {
+  background: linear-gradient(#07a2f6, #ff00e6);
+  padding: 4%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+#light .col-md-3 {
+  color: rgb(255, 255, 255);
+}
+
+.contact-info {
+  margin-top: 10%;
+}
+
+.contact-info img {
+  margin-bottom: 15%;
+}
+
+.contact-info h2 {
+  margin-bottom: 10%;
+}
+
+.col-md-9 {
+  background: #fff;
+  padding: 3%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+.contact-form button {
+  background: #25274d;
+  color: #fff;
+  font-weight: 600;
+  width: 25%;
+}
+
+.contact-form button:focus {
+  box-shadow: none;
+  color: black;
+}
+
+.contactMe {
+  text-shadow: #25274d;
+  font-weight: bold;
+  font-size: 32px;
+  background: -webkit-linear-gradient(#ff00e6, #07a2f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*Contact Me Viewport Border Radius Styling*/
+@media (max-width: 767px) {
+  .contactBorder {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+}
+
+.formAll {
+}
+
+#light .card {
+  color: white;
+  background-color: rgb(99, 99, 99);
+  box-shadow: inset 0 0 5rem rgba(138, 138, 138, 0.5);
+
+}
+
+#dark .card {
+  color: black;
+  box-shadow: inset 0 0 5rem rgba(138, 138, 138, 0.5);
+
+}
+
+#dark #btn-link {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+#light #btn-link {
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+#light #btn-link:hover {
+  color: #ff01fb;
+}
+
+#btn-link:hover {
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px #0fa,
+  0 0 82px #0fa,
+  0 0 92px #0fa,
+  0 0 102px #0fa,
+  0 0 151px #0fa;
+}
+
+#light .contactBorder {
+  border: #07a2f6;
+  border: 30px;
+  background-color: rgb(207, 237, 255);
+  text-align: start;
+}
+
+#dark .contactBorder {
+  color: rgb(101, 101, 101);
+  text-align: start;
+}
+
+.logForm {
+  margin: 15px;
+  padding: 5px;
+}
+
+.footie {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: auto;
+
+}
+
+.contact {
+  display: block;
+  margin-bottom: 600px;
 }

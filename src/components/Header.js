@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState } from 'react';
 import {
     Navbar,
@@ -6,8 +5,10 @@ import {
     NavbarToggler,
     Nav,
     NavItem,
-    NavLink
+    NavLink,
+    Button
 } from 'reactstrap';
+import LoginModal from './LoginModal';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -38,9 +39,7 @@ const Header = () => {
                         </NavLink>
                     </NavItem>
                     <NavItem className='ms-auto'>
-                        <NavLink className='nav-link' to='/clientLogin'>
-                            Client Login
-                        </NavLink>
+                        <LoginModal />
                     </NavItem>
                 </Nav>
             </Collapse>

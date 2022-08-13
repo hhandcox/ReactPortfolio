@@ -1,11 +1,12 @@
 import React from "react";
+import ContactForm from "../components/ContactForm";
 import Header from "../components/Header";
 
 const Contact = () => {
     return (
         <>
             <Header />
-            <div className="contactForm">Contact Form</div>
+            <ContactForm />
         </>
     );
 }

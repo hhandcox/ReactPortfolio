@@ -34,7 +34,7 @@ function App() {
           <label className='switchLabel'> {theme === 'light' ? 'Light' : 'Dark'} </label>
           <ReactSwitch onChange={toggleTheme} checked={theme === 'dark'} />
         </div>
-        <Footer />
+        <Footer className='footie' />
       </div>
     </ThemeContext.Provider>
   );

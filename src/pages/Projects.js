@@ -1,12 +1,14 @@
 import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { Col, Row } from "reactstrap";
+import ProjectCards from "../components/ProjectCards"
 
 const Projects = () => {
     return (
         <>
             <Header />
-            <div className="projectContent mx-auto">Content From Projects</div>
+            <ProjectCards />
         </>
     );
 }
